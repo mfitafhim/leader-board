@@ -1,0 +1,146 @@
+/* common css */
+body{
+    background-color: #F3F1FF;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 870px;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+/* players && blog css start */
+.top-players{
+    margin-bottom: 30px;
+}
+.top-players-heading{
+    font-size: 24px;
+    font-weight: 500;
+    color: #562EFF;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+.player h3{
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 16px;
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 23px;
+}
+.blog{
+    display: flex;
+}
+.blog .thumbnail img{
+    width: 177px;
+    height: 117px;
+}
+.blog .blog-info{
+    margin-left: 16px;
+}
+/* players && blog css end */
+/* course css start */
+.courses{
+    display: flex;
+    justify-content: space-between;
+}
+.course{
+    background-color: #f9f6f6;
+    padding: 10px;
+    box-shadow: 0 0 10px 0px rgb(187, 187, 187);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.course-banner img{
+    width: 224px;
+    height: 104px;
+}
+.course-info h3{
+    font-size: 20px;
+}
+.course-info p{
+    color: #ED6B4F;
+    font-size: 14px;
+}
+.course-desc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.course-desc i.filled{
+    color: #FFC014;
+}
+.course-desc i.empty{
+    color: #AEAEAE;
+}
+.course-desc p{
+    color: #A2A2A2;
+    font-size: 14px;
+}
+.course-desc .clock{
+    background-color: rgba(255, 74, 95, 0.489);
+    border-radius: 15px;
+    padding: 2px 5px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.course-desc .clock i, span{
+    font-size: 14px;
+    color: #FF4A60;
+}
+/* course css end */
+
+/* media queries */
+/* mobile devices */
+@media only screen and (max-width : 767px) {
+    .container{
+        width: 100%;
+    }
+    .players,.blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player,.courses{
+        flex-direction: column;
+    }
+}
+
+/* tablet devices */
+@media only screen and (min-width : 768px) and (max-width: 1023px) {
+    .container{
+        width: 100%;
+    }
+    .players,.blogs{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .player,.courses{
+        flex-direction: column;
+    }
+}
